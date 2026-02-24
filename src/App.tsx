@@ -14,13 +14,15 @@ function App() {
           throw new Error
         }
         const data:ICountryShort[] = await response.json()
-        console.log('data', data)
+        setcountriesList(data)
       }catch(e) {
         console.log(e)
       }
     }
     getCountries()
   },[])
+
+  const getCountriesByName
 
   return (
    <div>
