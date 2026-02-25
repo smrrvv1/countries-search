@@ -4,6 +4,10 @@ alpha3Code: string;
 independent: boolean
 }
 
-// export interface ICountry {
-
-// }
+export interface ICountry {
+name: string;
+capital: string;
+population: number;
+flag: string;
+borders?: string[]
+}
